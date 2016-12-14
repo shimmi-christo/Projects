@@ -1,0 +1,18 @@
+//Enter a number and have the program generate PI up to that many decimal places.
+//Keep a limit to how far the program will go.
+
+var numPi = document.getElementById("numPi");
+
+numPi.addEventListener("input", piDigits);
+
+
+function piDigits() {
+    var digits = parseFloat(numPi.value);
+    
+    if ( digits > 20 || digits === NaN ) {
+        digits = 20;
+    }
+        var n = Math.PI.toFixed(digits);
+
+    pi.innerHTML = n;
+};
