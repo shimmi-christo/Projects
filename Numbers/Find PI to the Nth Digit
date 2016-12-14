@@ -3,16 +3,16 @@
 
 var numPi = document.getElementById("numPi");
 
-numPi.addEventListener("input", piDigits);
-
-
 function piDigits() {
     var digits = parseFloat(numPi.value);
     
     if ( digits > 20 || digits === NaN ) {
         digits = 20;
     }
-        var n = Math.PI.toFixed(digits);
+        var answer = Math.PI.toFixed(digits);
 
-    pi.innerHTML = n;
+    pi.innerHTML = answer;
 };
+
+numPi.addEventListener("input", piDigits);
+console.log(Math.PI.toFixed(2));
