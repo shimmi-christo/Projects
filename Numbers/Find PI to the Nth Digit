@@ -16,3 +16,28 @@ function piDigits() {
 
 numPi.addEventListener("input", piDigits);
 console.log(Math.PI.toFixed(2));
+
+
+
+
+<html class="no-js">
+<head>
+
+<header>
+Enter a number and have the program generate PI up to that many decimal places.
+</header>
+
+</head>
+<body>
+
+<p> 
+
+<input id="numPi">    
+</p>
+
+<p id="pi"></p>
+
+
+<script src="gitHub.js"></script>
+</body>
+</html>
